@@ -24,10 +24,16 @@ My source of Data was yfinance (Yahoo Finance) and I limited the selected price 
 ## My Results:
 
 Black-Scholes Call Price: £23.09
+
 Monte Carlo Call Price: £23.12
+
 Note: These call prices represent the premium – the upfront cost of the right to buy the stock at the strike price.
 
-A key graph I created with my code was this one. It is a graph showing clearly how the Monte Carlo simulations converged to the Black-Scholes theoretical call price, highlighting how useful Monte Carlo simulations are in real world pricing.
+A key graph I created with my code was the one below: 
+
+![Convergence plot](m_c_convergence_plot.png)
+
+It is a graph showing clearly how the Monte Carlo simulations converged to the Black-Scholes theoretical call price, highlighting how useful Monte Carlo simulations are in real world pricing.
 
 My final calculation was the Delta value, which I found to be 0.489. The delta value is an important calculation as it answers the question “If the stock moves by £1, how much does the option’s price move?”, which has real-world value in delta hedging. If a bank sells a client a call option, the bank is now exposed. To protect itself, the bank buys a quantity of shares, equal to that of the delta value, for every option sold so that the gains on the stock offset the losses on the sold option. A hedge needs to be constantly adjusted because as stock price changes, so does the delta.
 
